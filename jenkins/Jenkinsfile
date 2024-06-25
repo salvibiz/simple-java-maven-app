@@ -18,7 +18,8 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                sh './jenkins/scripts/deliver.sh'
+                //sh './jenkins/scripts/deliver.sh'
+                echo 'Build & test completed successfully. Deliver has an issue with target/my-app  jar file access'
             }
         }
     }
