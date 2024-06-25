@@ -22,5 +22,10 @@ pipeline {
                 echo 'Build & test completed successfully. Deliver has an issue with target/my-app  jar file access'
             }
         }
+        stage('Complete') {
+            steps {
+                echo 'Job Complete!'
+            }
+        }
     }
 }
